@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Einstein</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Jogo Einstein</h1>
+
+    <h2>Pistas:</h2>
+    <ol>
+        <li>O sistema que tem a cor verde é responsável por armazenar informações sobre os produtos disponíveis na loja,
+            incluindo detalhes como tamanho, cor e material. Ele permite que sejam adicionados ou removidos produtos de
+            forma fácil e rápida, além de possibilitar a criação de promoções e descontos para produtos específicos.
+        </li>
+
+        <li> O sistema com a cor amarela é encarregado de processar os pagamentos dos clientes e garante a segurança dos
+            dados pessoais deles. Ele aceita vários métodos de pagamento, incluindo cartão de crédito e boleto, e emite
+            um recibo automaticamente após a confirmação do pagamento.</li>
+
+        <li> O sistema que tem a cor vermelha é responsável por gerenciar os pedidos feitos pelos clientes. Ele permite
+            a visualização do status de cada pedido, desde a confirmação até a entrega, e envia notificações automáticas
+            ao cliente sobre o andamento do pedido. Também possibilita o cancelamento ou alteração do pedido antes da
+            entrega.</li>
+
+        <li> O sistema com a cor azul é encarregado de controlar a quantidade de produtos em estoque. Ele atualiza
+            constantemente as informações sobre o estoque e alerta automaticamente quando um produto está em baixa. Além
+            disso, permite a busca rápida de produtos pelo nome ou código.</li>
+
+        <li> O sistema que tem a cor roxa é responsável por armazenar e gerenciar as informações dos usuários
+            cadastrados na loja. Ele garante a segurança das informações pessoais dos usuários e permite a atualização
+            dos dados pessoais e de endereço dos usuários. Também possibilita a criação de uma lista de desejos
+            personalizada para cada usuário.</li>
+
+    </ol>
+    <form>
+        <section id="#casa1">
+            <h2>Microsserviço 1</h2>
+            <label for="cor1">Cor:</label>
+            <select id="cor1" name="cor1">
+                <option value="nenhuma"></option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <label for="resp1">Responsabilidade:</label>
+            <select id="resp1" name="resp1">
+                <option value="nenhuma"></option>
+                <option value="controlar-estoque">Controlar a quantidade de produtos em estoque</option>
+                <option value="processar-pagamentos">Processar os pagamentos dos clientes</option>
+                <option value="armazenar-informacoes-produtos">Armazenar informações sobre os produtos disponíveis na
+                    loja
+                </option>
+                <option value="gerenciar-pedidos">Gerenciar os pedidos feitos pelos clientes</option>
+                <option value="armazenar-informacoes-usuarios">Armazenar e gerenciar as informações dos usuários
+                    cadastrados
+                    na loja</option>
+            </select>
+            <label for="carac11">Característica 1:</label>
+            <select id="carac11" name="carac11">
+                <option value="nenhuma"></option>
+                <option value="atualiza-info-estoque">Atualiza constantemente as informações sobre o estoque</option>
+                <option value="garante-seguranca-dados">Garante a segurança dos dados dos clientes/usuários</option>
+                <option value="permite-adicao-remocao-produtos">Permite a adição e remoção de produtos de forma fácil e
+                    rápida</option>
+                <option value="permite-visualizacao-status-pedidos">Permite a visualização do status de cada pedido
+                </option>
+                <option value="garante-seguranca-informacoes-usuarios">Garante a segurança das informações pessoais dos
+                    usuários</option>
+            </select>
+            <label for="carac12">Característica 2:</label>
+            <select id="carac12" name="carac12">
+                <option value="nenhuma"></option>
+                <option value="alerta-produto-em-baixa">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="aceita-diversos-metodos-pagamento">Aceita diversos métodos de pagamento, como cartão de
+                    crédito e boleto</option>
+                <option value="apresenta-informacoes-detalhadas-produtos">Apresenta as informações detalhadas sobre cada
+                    produto, como tamanho, cor e material</option>
+                <option value="envia-notificacoes-automaticas">Envia notificações automáticas para o cliente sobre o
+                    andamento do pedido</option>
+                <option value="permite-atualizacao-dados-pessoais">Permite a atualização dos dados pessoais e de
+                    endereço
+                    dos usuários</option>
+            </select>
+            <label for="carac13">Característica 3:</label>
+            <select id="carac13" name="carac13">
+                <option value="nenhuma"></option>
+                <option value="permite-busca-de-produtos">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="confirma-o-pagamento">Confirma o pagamento e emite um recibo automaticamente
+                </option>
+                <option value="possibilita-a-criacao-de-promocoes">Possibilita a criação de promoções e descontos para
+                    produtos específicos</option>
+                <option value="possibilita-o-cancelamento-do-pedido">Possibilita o cancelamento ou alteração do pedido
+                    antes
+                    da entrega</option>
+                <option value="possibilita-criacao-de-lista-de-desejos">Possibilita a criação de uma lista de desejos
+                    personalizada para cada usuário</option>
+            </select>
+        </section>
+
+
+        <section id="#casa2">
+            <h2>Microsserviço 2</h2>
+            <label for="cor2">Cor:</label>
+            <select id="cor2" name="cor2">
+                <option value="nenhuma"></option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <label for="resp2">Responsabilidade:</label>
+            <select id="resp2" name="resp2">
+                <option value="nenhuma"></option>
+                <option value="controlar-estoque">Controlar a quantidade de produtos em estoque</option>
+                <option value="processar-pagamentos">Processar os pagamentos dos clientes</option>
+                <option value="armazenar-informacoes-produtos">Armazenar informações sobre os produtos disponíveis na
+                    loja
+                </option>
+                <option value="gerenciar-pedidos">Gerenciar os pedidos feitos pelos clientes</option>
+                <option value="armazenar-informacoes-usuarios">Armazenar e gerenciar as informações dos usuários
+                    cadastrados
+                    na loja</option>
+            </select>
+            <label for="carac21">Característica 1:</label>
+            <select id="carac21" name="carac11">
+                <option value="nenhuma"></option>
+                <option value="atualiza-info-estoque">Atualiza constantemente as informações sobre o estoque</option>
+                <option value="garante-seguranca-dados">Garante a segurança dos dados dos clientes/usuários</option>
+                <option value="permite-adicao-remocao-produtos">Permite a adição e remoção de produtos de forma fácil e
+                    rápida</option>
+                <option value="permite-visualizacao-status-pedidos">Permite a visualização do status de cada pedido
+                </option>
+                <option value="garante-seguranca-informacoes-usuarios">Garante a segurança das informações pessoais dos
+                    usuários</option>
+            </select>
+            <label for="carac22">Característica 2:</label>
+            <select id="carac22" name="carac22">
+                <option value="nenhuma"></option>
+                <option value="alerta-produto-em-baixa">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="aceita-diversos-metodos-pagamento">Aceita diversos métodos de pagamento, como cartão de
+                    crédito e boleto</option>
+                <option value="apresenta-informacoes-detalhadas-produtos">Apresenta as informações detalhadas sobre cada
+                    produto, como tamanho, cor e material</option>
+                <option value="envia-notificacoes-automaticas">Envia notificações automáticas para o cliente sobre o
+                    andamento do pedido</option>
+                <option value="permite-atualizacao-dados-pessoais">Permite a atualização dos dados pessoais e de
+                    endereço
+                    dos usuários</option>
+            </select>
+            <label for="carac23">Característica 3:</label>
+            <select id="carac23" name="carac23">
+                <option value="nenhuma"></option>
+                <option value="permite-busca-de-produtos">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="confirma-o-pagamento">Confirma o pagamento e emite um recibo automaticamente
+                </option>
+                <option value="possibilita-a-criacao-de-promocoes">Possibilita a criação de promoções e descontos para
+                    produtos específicos</option>
+                <option value="possibilita-o-cancelamento-do-pedido">Possibilita o cancelamento ou alteração do pedido
+                    antes
+                    da entrega</option>
+                <option value="possibilita-criacao-de-lista-de-desejos">Possibilita a criação de uma lista de desejos
+                    personalizada para cada usuário</option>
+            </select>
+        </section>
+
+        <section id="#casa3">
+            <h2>Microsserviço 3</h2>
+            <label for="cor3">Cor:</label>
+            <select id="cor3" name="cor3">
+                <option value="nenhuma"></option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <label for="resp3">Responsabilidade:</label>
+            <select id="resp3" name="resp3">
+                <option value="nenhuma"></option>
+                <option value="controlar-estoque">Controlar a quantidade de produtos em estoque</option>
+                <option value="processar-pagamentos">Processar os pagamentos dos clientes</option>
+                <option value="armazenar-informacoes-produtos">Armazenar informações sobre os produtos disponíveis na
+                    loja
+                </option>
+                <option value="gerenciar-pedidos">Gerenciar os pedidos feitos pelos clientes</option>
+                <option value="armazenar-informacoes-usuarios">Armazenar e gerenciar as informações dos usuários
+                    cadastrados
+                    na loja</option>
+            </select>
+            <label for="carac31">Característica 1:</label>
+            <select id="carac31" name="carac31">
+                <option value="nenhuma"></option>
+                <option value="atualiza-info-estoque">Atualiza constantemente as informações sobre o estoque</option>
+                <option value="garante-seguranca-dados">Garante a segurança dos dados dos clientes/usuários</option>
+                <option value="permite-adicao-remocao-produtos">Permite a adição e remoção de produtos de forma fácil e
+                    rápida</option>
+                <option value="permite-visualizacao-status-pedidos">Permite a visualização do status de cada pedido
+                </option>
+                <option value="garante-seguranca-informacoes-usuarios">Garante a segurança das informações pessoais dos
+                    usuários</option>
+            </select>
+            <label for="carac32">Característica 2:</label>
+            <select id="carac32" name="carac32">
+                <option value="nenhuma"></option>
+                <option value="alerta-produto-em-baixa">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="aceita-diversos-metodos-pagamento">Aceita diversos métodos de pagamento, como cartão de
+                    crédito e boleto</option>
+                <option value="apresenta-informacoes-detalhadas-produtos">Apresenta as informações detalhadas sobre cada
+                    produto, como tamanho, cor e material</option>
+                <option value="envia-notificacoes-automaticas">Envia notificações automáticas para o cliente sobre o
+                    andamento do pedido</option>
+                <option value="permite-atualizacao-dados-pessoais">Permite a atualização dos dados pessoais e de
+                    endereço
+                    dos usuários</option>
+            </select>
+            <label for="carac33">Característica 3:</label>
+            <select id="carac33" name="carac33">
+                <option value="nenhuma"></option>
+                <option value="permite-busca-de-produtos">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="confirma-o-pagamento">Confirma o pagamento e emite um recibo automaticamente
+                </option>
+                <option value="possibilita-a-criacao-de-promocoes">Possibilita a criação de promoções e descontos para
+                    produtos específicos</option>
+                <option value="possibilita-o-cancelamento-do-pedido">Possibilita o cancelamento ou alteração do pedido
+                    antes
+                    da entrega</option>
+                <option value="possibilita-criacao-de-lista-de-desejos">Possibilita a criação de uma lista de desejos
+                    personalizada para cada usuário</option>
+            </select>
+        </section>
+
+        <section id="#casa4">
+            <h2>Microsserviço 4</h2>
+            <label for="cor4">Cor:</label>
+            <select id="cor4" name="cor4">
+                <option value="nenhuma"></option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <label for="resp4">Responsabilidade:</label>
+            <select id="resp4" name="resp4">
+                <option value="nenhuma"></option>
+                <option value="controlar-estoque">Controlar a quantidade de produtos em estoque</option>
+                <option value="processar-pagamentos">Processar os pagamentos dos clientes</option>
+                <option value="armazenar-informacoes-produtos">Armazenar informações sobre os produtos disponíveis na
+                    loja
+                </option>
+                <option value="gerenciar-pedidos">Gerenciar os pedidos feitos pelos clientes</option>
+                <option value="armazenar-informacoes-usuarios">Armazenar e gerenciar as informações dos usuários
+                    cadastrados
+                    na loja</option>
+            </select>
+            <label for="carac41">Característica 1:</label>
+            <select id="carac41" name="carac41">
+                <option value="nenhuma"></option>
+                <option value="atualiza-info-estoque">Atualiza constantemente as informações sobre o estoque</option>
+                <option value="garante-seguranca-dados">Garante a segurança dos dados dos clientes/usuários</option>
+                <option value="permite-adicao-remocao-produtos">Permite a adição e remoção de produtos de forma fácil e
+                    rápida</option>
+                <option value="permite-visualizacao-status-pedidos">Permite a visualização do status de cada pedido
+                </option>
+                <option value="garante-seguranca-informacoes-usuarios">Garante a segurança das informações pessoais dos
+                    usuários</option>
+            </select>
+            <label for="carac42">Característica 2:</label>
+            <select id="carac42" name="carac42">
+                <option value="nenhuma"></option>
+                <option value="alerta-produto-em-baixa">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="aceita-diversos-metodos-pagamento">Aceita diversos métodos de pagamento, como cartão de
+                    crédito e boleto</option>
+                <option value="apresenta-informacoes-detalhadas-produtos">Apresenta as informações detalhadas sobre cada
+                    produto, como tamanho, cor e material</option>
+                <option value="envia-notificacoes-automaticas">Envia notificações automáticas para o cliente sobre o
+                    andamento do pedido</option>
+                <option value="permite-atualizacao-dados-pessoais">Permite a atualização dos dados pessoais e de
+                    endereço
+                    dos usuários</option>
+            </select>
+            <label for="carac43">Característica 3:</label>
+            <select id="carac43" name="carac43">
+                <option value="nenhuma"></option>
+                <option value="permite-busca-de-produtos">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="confirma-o-pagamento">Confirma o pagamento e emite um recibo automaticamente
+                </option>
+                <option value="possibilita-a-criacao-de-promocoes">Possibilita a criação de promoções e descontos para
+                    produtos específicos</option>
+                <option value="possibilita-o-cancelamento-do-pedido">Possibilita o cancelamento ou alteração do pedido
+                    antes
+                    da entrega</option>
+                <option value="possibilita-criacao-de-lista-de-desejos">Possibilita a criação de uma lista de desejos
+                    personalizada para cada usuário</option>
+            </select>
+        </section>
+
+
+        <section id="#casa5">
+            <h2>Microsserviço 5</h2>
+            <label for="cor5">Cor:</label>
+            <select id="cor5" name="cor5">
+                <option value="nenhuma"></option>
+                <option value="azul">Azul</option>
+                <option value="amarelo">Amarelo</option>
+                <option value="verde">Verde</option>
+                <option value="vermelho">Vermelho</option>
+                <option value="roxo">Roxo</option>
+            </select>
+            <label for="resp5">Responsabilidade:</label>
+            <select id="resp5" name="resp5">
+                <option value="nenhuma"></option>
+                <option value="controlar-estoque">Controlar a quantidade de produtos em estoque</option>
+                <option value="processar-pagamentos">Processar os pagamentos dos clientes</option>
+                <option value="armazenar-informacoes-produtos">Armazenar informações sobre os produtos disponíveis na
+                    loja
+                </option>
+                <option value="gerenciar-pedidos">Gerenciar os pedidos feitos pelos clientes</option>
+                <option value="armazenar-informacoes-usuarios">Armazenar e gerenciar as informações dos usuários
+                    cadastrados
+                    na loja</option>
+            </select>
+            <label for="carac51">Característica 1:</label>
+            <select id="carac51" name="carac51">
+                <option value="nenhuma"></option>
+                <option value="atualiza-info-estoque">Atualiza constantemente as informações sobre o estoque</option>
+                <option value="garante-seguranca-dados">Garante a segurança dos dados dos clientes/usuários</option>
+                <option value="permite-adicao-remocao-produtos">Permite a adição e remoção de produtos de forma fácil e
+                    rápida</option>
+                <option value="permite-visualizacao-status-pedidos">Permite a visualização do status de cada pedido
+                </option>
+                <option value="garante-seguranca-informacoes-usuarios">Garante a segurança das informações pessoais dos
+                    usuários</option>
+            </select>
+            <label for="carac52">Característica 2:</label>
+            <select id="carac52" name="carac52">
+                <option value="nenhuma"></option>
+                <option value="alerta-produto-em-baixa">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="aceita-diversos-metodos-pagamento">Aceita diversos métodos de pagamento, como cartão de
+                    crédito e boleto</option>
+                <option value="apresenta-informacoes-detalhadas-produtos">Apresenta as informações detalhadas sobre cada
+                    produto, como tamanho, cor e material</option>
+                <option value="envia-notificacoes-automaticas">Envia notificações automáticas para o cliente sobre o
+                    andamento do pedido</option>
+                <option value="permite-atualizacao-dados-pessoais">Permite a atualização dos dados pessoais e de
+                    endereço
+                    dos usuários</option>
+            </select>
+            <label for="carac53">Característica 3:</label>
+            <select id="carac53" name="carac53">
+                <option value="nenhuma"></option>
+                <option value="permite-busca-de-produtos">Alerta automaticamente quando um produto está em baixa no
+                    estoque
+                </option>
+                <option value="confirma-o-pagamento">Confirma o pagamento e emite um recibo automaticamente
+                </option>
+                <option value="possibilita-a-criacao-de-promocoes">Possibilita a criação de promoções e descontos para
+                    produtos específicos</option>
+                <option value="possibilita-o-cancelamento-do-pedido">Possibilita o cancelamento ou alteração do pedido
+                    antes
+                    da entrega</option>
+                <option value="possibilita-criacao-de-lista-de-desejos">Possibilita a criação de uma lista de desejos
+                    personalizada para cada usuário</option>
+            </select>
+        </section>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
