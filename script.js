@@ -23,9 +23,17 @@ selectCor1.addEventListener("change", () => {
 });
 
 // Casa 2 - manipulação da seleção de cor
-const cor2 = document.querySelector("#cor2"); // seleção do elemento HTML
-cor2.addEventListener("change", (event) => {
-  // evento de mudança de seleção
-  const corSelecionada = event.target.value; // valor da seleção
-  // aqui você pode adicionar código para manipular a seleção de cor
+
+const selectCor2 = document.getElementById("cor2");
+const changeCor2 = document.getElementById("#casa2");
+
+// Adicione um ouvinte de eventos ao elemento de seleção de cor
+selectCor2.addEventListener("change", () => {
+  // Obtenha o valor selecionado do elemento de seleção de cor
+  const corSelecionada = selectCor2.value;
+
+  changeCor2.style.backgroundColor = colors[corSelecionada];
+  changeCor2.style.color = "white";
+  // Exiba o valor selecionado na console do navegador
+  console.log(`A cor selecionada é ${corSelecionada}`);
 });
