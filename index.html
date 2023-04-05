@@ -13,28 +13,16 @@
 
     <h2>Pistas:</h2>
     <ol>
-        <li>O sistema que tem a cor verde é responsável por armazenar informações sobre os produtos disponíveis na loja,
-            incluindo detalhes como tamanho, cor e material. Ele permite que sejam adicionados ou removidos produtos de
-            forma fácil e rápida, além de possibilitar a criação de promoções e descontos para produtos específicos.
-        </li>
+<li>O microsserviço verde é responsável por armazenar as informações detalhadas sobre cada produto e permite a criação de promoções e descontos para produtos específicos. Ele se comunica com o microsserviço vermelho para fornecer informações sobre o estoque disponível para cada produto. </li>
 
-        <li> O sistema com a cor amarela é encarregado de processar os pagamentos dos clientes e garante a segurança dos
-            dados pessoais deles. Ele aceita vários métodos de pagamento, incluindo cartão de crédito e boleto, e emite
-            um recibo automaticamente após a confirmação do pagamento.</li>
+<li>O microsserviço amarelo é responsável por processar os pagamentos dos clientes e garante a segurança dos dados dos clientes. Ele se comunica com o microsserviço vermelho para confirmar o pagamento do pedido e emitir um recibo automaticamente.</li>
 
-        <li> O sistema que tem a cor vermelha é responsável por gerenciar os pedidos feitos pelos clientes. Ele permite
-            a visualização do status de cada pedido, desde a confirmação até a entrega, e envia notificações automáticas
-            ao cliente sobre o andamento do pedido. Também possibilita o cancelamento ou alteração do pedido antes da
-            entrega.</li>
+<li>O microsserviço azul é responsável por controlar a quantidade de produtos em estoque e alertar automaticamente quando um produto está em baixa no estoque. Ele se comunica com o microsserviço verde para obter informações detalhadas sobre cada produto e com o microsserviço vermelho para atualizar o status do pedido com base no estoque disponível.</li>
 
-        <li> O sistema com a cor azul é encarregado de controlar a quantidade de produtos em estoque. Ele atualiza
-            constantemente as informações sobre o estoque e alerta automaticamente quando um produto está em baixa. Além
-            disso, permite a busca rápida de produtos pelo nome ou código.</li>
+<li>O microsserviço roxo é responsável por armazenar e gerenciar as informações dos usuários cadastrados na loja e permite a criação de uma lista de desejos personalizada para cada usuário. Ele se comunica com o microsserviço amarelo para processar o pagamento do pedido do usuário e com o microsserviço vermelho para fornecer informações sobre o status do pedido.</li>
 
-        <li> O sistema que tem a cor roxa é responsável por armazenar e gerenciar as informações dos usuários
-            cadastrados na loja. Ele garante a segurança das informações pessoais dos usuários e permite a atualização
-            dos dados pessoais e de endereço dos usuários. Também possibilita a criação de uma lista de desejos
-            personalizada para cada usuário.</li>
+<li>O microsserviço verde é responsável por armazenar informações sobre os produtos disponíveis na loja e apresentar informações detalhadas sobre cada produto, como tamanho, cor e material. Ele se comunica com o microsserviço azul para atualizar as informações sobre o estoque disponível e com o microsserviço vermelho para fornecer informações sobre o status do pedido.</li>
+
 
     </ol>
     <form>
